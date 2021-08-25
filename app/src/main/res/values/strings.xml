@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lista de tarefas</string>
+    <string name="dialog_negative">Não</string>
+    <string name="dialog_confirm">Sim</string>
+    <string name="tv_message_main">Você ainda não possui tarefas registradas!</string>
+    <string name="tv_message_main_add">Clique no + para adicionar</string>
+</resources>
