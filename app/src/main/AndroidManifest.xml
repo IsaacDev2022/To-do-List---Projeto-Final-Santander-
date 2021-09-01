@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TodoListProjetoFinal">
-        <activity android:name=".appUi.AddTaskActivity">
+        <activity android:name=".appUi.viewModel.AddTaskActivity">
 
         </activity>
-        <activity android:name=".appUi.MainActivity">
+        <activity android:name=".appUi.view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

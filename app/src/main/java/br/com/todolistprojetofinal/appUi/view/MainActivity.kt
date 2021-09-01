@@ -1,4 +1,4 @@
-package br.com.todolistprojetofinal.appUi
+package br.com.todolistprojetofinal.appUi.view
 
 import android.app.Activity
 import android.content.Intent
@@ -7,8 +7,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import br.com.todolistprojetofinal.R
-import br.com.todolistprojetofinal.dataSource.TaskDataSource
+import br.com.todolistprojetofinal.data.dataSource.TaskDataSource
 import br.com.todolistprojetofinal.TaskListAdapter
+import br.com.todolistprojetofinal.appUi.viewModel.AddTaskActivity
 import br.com.todolistprojetofinal.databinding.ActivityMainBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
@@ -68,6 +69,7 @@ class MainActivity : AppCompatActivity() {
         binding.includeEmpty.emptyState.visibility = if (list.isEmpty()) View.VISIBLE
         else View.GONE
 
+        adapter.notifyDataSetChanged()
         adapter.submitList(list)
     }
 

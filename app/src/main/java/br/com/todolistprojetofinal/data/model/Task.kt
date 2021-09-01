@@ -1,4 +1,4 @@
-package br.com.todolistprojetofinal.model
+package br.com.todolistprojetofinal.data.model
 
 data class Task(
     val title: String,

@@ -1,11 +1,11 @@
-package br.com.todolistprojetofinal.dataSource
+package br.com.todolistprojetofinal.data.dataSource
 
-import br.com.todolistprojetofinal.model.Task
+import br.com.todolistprojetofinal.data.model.Task
 
 object TaskDataSource {
     private val list = arrayListOf<Task>()
 
-    fun getList() = list.toList()
+    fun getList() = list
 
     fun insertTask(task: Task) {
         if (task.id == 0) {

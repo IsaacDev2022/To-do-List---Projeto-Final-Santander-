@@ -1,11 +1,11 @@
-package br.com.todolistprojetofinal.appUi
+package br.com.todolistprojetofinal.appUi.viewModel
 
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import br.com.todolistprojetofinal.model.Task
-import br.com.todolistprojetofinal.dataSource.TaskDataSource
+import br.com.todolistprojetofinal.data.model.Task
+import br.com.todolistprojetofinal.data.dataSource.TaskDataSource
 import br.com.todolistprojetofinal.databinding.ActivityAddTaskBinding
 import br.com.todolistprojetofinal.format
 import br.com.todolistprojetofinal.text
@@ -26,11 +26,11 @@ class AddTaskActivity : AppCompatActivity() {
 
         if (intent.hasExtra(TASK_ID)) {
             val taskId = intent.getIntExtra(TASK_ID, 0)
-            TaskDataSource.findById(taskId)?.let {
-                binding.tilTitle.text = it.title
-                binding.tilDate.text = it.date
-                binding.tilHour.text = it.hour
-                binding.tilDescription.text = it.description
+            TaskDataSource.findById(taskId)?.let { task ->
+                binding.tilTitle.text = task.title
+                binding.tilDate.text = task.date
+                binding.tilHour.text = task.hour
+                binding.tilDescription.text = task.description
             }
         }
 
