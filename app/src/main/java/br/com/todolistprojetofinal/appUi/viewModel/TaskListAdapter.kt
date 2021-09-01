@@ -6,7 +6,7 @@ import android.widget.PopupMenu
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import br.com.todolistprojetofinal.data.model.Task
+import br.com.todolistprojetofinal.model.Task
 import br.com.todolistprojetofinal.databinding.ItemTaskBinding
 
 class TaskListAdapter : ListAdapter<Task, TaskListAdapter.TaskViewHolder>(DiffCallback()) {

@@ -4,7 +4,7 @@ import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import br.com.todolistprojetofinal.data.model.Task
+import br.com.todolistprojetofinal.model.Task
 import br.com.todolistprojetofinal.data.dataSource.TaskDataSource
 import br.com.todolistprojetofinal.databinding.ActivityAddTaskBinding
 import br.com.todolistprojetofinal.format

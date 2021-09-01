@@ -1,6 +1,6 @@
 package br.com.todolistprojetofinal.data.dataSource
 
-import br.com.todolistprojetofinal.data.model.Task
+import br.com.todolistprojetofinal.model.Task
 
 object TaskDataSource {
     private val list = arrayListOf<Task>()
