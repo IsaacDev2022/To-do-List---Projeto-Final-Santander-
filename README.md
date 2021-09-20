@@ -26,7 +26,7 @@ aplicativo foi criado utilizando o Android Studio como IDE de desenvolvimento, e
 
 <h2> Implementações futuras </h2>
 <ul>
-  <li> MVVM - Clean Arquiteture </li>  
+  <li> MVVM - Clean Arquiteture - Em andamento</li>  
   <li> ROOM Database - Em andamento</li>  
   <li> SearchView </li>
 </ul>
